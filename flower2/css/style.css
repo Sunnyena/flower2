@@ -315,7 +315,7 @@ Twitter
 #twitter {
   width: 70vw;
   display: inline-block;
-  margin: 0 auto 150px;
+  margin: 150px auto 150px;
 }
 
 /*-------------------------------------------
@@ -415,9 +415,6 @@ footer .fot_nav{
   margin: 26px auto 0;
 }
 
-footer .fot_nav.mn{
-
-}
 
 footer .fot_nav.mn p{
 margin-top: 40px;
@@ -578,7 +575,7 @@ Twitter
 #twitter {
   width: 430px;
   height: auto;
-  margin: 0 auto 179px 54px;
+  margin: 150px auto 179px 54px;
 }
 
 #twitter .section-title{
