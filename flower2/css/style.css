@@ -267,6 +267,7 @@ Contact
   border-radius: 1px;
   margin-bottom: 36px;
   padding: 4px 10px;
+  text-align: left;
 }
 
 #contact dd textarea{
