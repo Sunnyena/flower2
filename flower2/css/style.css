@@ -192,20 +192,101 @@ Gallery
 -------------------------------------------*/
 #gallery {
   margin-bottom: 480px;
-}
-#gallery .list li {
-  margin-bottom: 60px;
-}
-#gallery .list li img {
-  width: 48%;
-}
-#gallery .list li:nth-child(odd) {
-  text-align: left;
-}
-#gallery .list li:nth-child(even) {
-  text-align: right;
+  padding: 0;
 }
 
+#gallery .list {
+ position: relative;
+ max-width: 375px;
+ width: clamp(23.438rem, 12.431rem + 46.961vw, 50rem);
+ height: clamp(50rem, 37.569rem + 53.039vw, 80rem);
+ overflow: hidden;
+ margin: 0 auto;
+}
+
+#gallery .list li {
+  position: absolute;
+  object-fit: cover;
+
+}
+#gallery .list li.flower1{
+  bottom: 0;
+  right: -32px;
+  width: clamp(13rem, 4.927rem + 24.309vw, 24.375rem);
+  transition: all .3s ease;
+}
+.flower_text {
+  font-size: 1.125rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .5s ease;
+}
+#gallery .list li :hover {
+  filter: grayscale(1);
+}
+
+#gallery .list li:hover .flower_text {
+  opacity: 1;
+}
+
+#gallery .list li.flower2{
+  bottom: 0;
+  left: -40px;
+  width: clamp(14.5rem, 6.414rem + 25.967vw, 27.188rem);
+  transition: all .3s ease;
+}
+
+#gallery .list li.flower3{
+  bottom: 89px;
+  right: -38px;
+  width: clamp(16rem, 13.37rem + 28.287vw, 36rem);
+  transition: all .3s ease;
+}
+
+#gallery .list li.flower4{
+  left: -57px;
+  bottom: 140px;
+  width: clamp(16.25rem, 10.345rem + 25.193vw, 30.5rem);
+  transition: all .3s ease;
+}
+
+#gallery .list li.flower5 {
+  right: -69px;
+  top: 253px;
+  width: clamp(16.25rem, 11.2rem + 21.547vw, 28.438rem);
+  transition: all .3s ease;
+}
+	
+#gallery .list li.flower6 {
+    left: -39px;
+    top: 205px;
+    width: clamp(21.25rem, 15.138rem + 26.077vw, 36rem);
+    transition: all .3s ease;
+}
+
+#gallery .list li.flower7 {
+  right: -77px;
+  top: 80px;
+  width: clamp(16.25rem, 11.381rem + 20.773vw, 28rem);
+  transition: all .3s ease;
+}
+
+#gallery .list li.flower8 {
+  left: -30px;
+  top: 79px;
+  width: clamp(13.5rem, 7.942rem + 19.448vw, 23.5rem);
+  transition: all .3s ease;
+}
+
+
+#gallery .list li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /*-------------------------------------------
 Access
 -------------------------------------------*/
@@ -374,6 +455,75 @@ Information
 /*-------------------------------------------
 Gallery
 -------------------------------------------*/
+.wrapper {
+  max-width: 800px;
+  margin-left: 55px;
+}
+
+#gallery .section-title {
+  display: block;
+  font-size: 3.75rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin-bottom: 45px;
+  margin-left: 0;
+  text-align: left;
+}
+
+#gallery .list {
+  position: relative;
+  max-width: 800px;
+  width: clamp(23.438rem, 12.431rem + 46.961vw, 50rem);
+  height: clamp(50rem, 37.569rem + 53.039vw, 80rem);
+  overflow: hidden;
+ }
+
+#gallery .list li.flower1{
+  bottom: 0;
+  right: -6px;
+  width: clamp(13rem, 4.927rem + 24.309vw, 24.375rem);
+}
+#gallery .list li.flower2{
+  bottom: -13px;
+  left: -29px;
+  width: clamp(14.5rem, 6.414rem + 25.967vw, 27.188rem);
+}
+
+#gallery .list li.flower3 {
+bottom: 163px;
+right: 0px;
+width: clamp(20rem, 13.370rem + 28.287vw, 36rem);
+}
+
+#gallery .list li.flower4 {
+left: -62px;
+bottom: 247px;
+}
+
+#gallery .list li.flower5{
+right: -22px;
+top: 290px;
+width: clamp(16.25rem, 11.200rem + 21.547vw, 28.438rem);
+}
+#gallery .list li.flower6{
+left: -18px;
+top: 216px;
+width: clamp(21.25rem, 15.138rem + 26.077vw, 36rem);
+}
+#gallery .list li.flower7 {
+right: -21px;
+top: -6px;
+width: clamp(16.25rem, 11.381rem + 20.773vw, 28rem);
+}
+#gallery .list li.flower8 {
+left: -20px;
+top: -8px;
+width: clamp(12.5rem, 7.942rem + 19.448vw, 23.5rem);
+}
+
+.flower_text {
+font-size: 1.5rem;
+}
 
 	
 	
