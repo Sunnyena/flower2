@@ -576,10 +576,13 @@ Twitter
   width: 430px;
   height: auto;
   margin: 150px auto 179px 54px;
+  display: block;
+
 }
 
 #twitter .section-title{
   display: block;
+  text-align: left;
 }
 
 /*-------------------------------------------
@@ -587,6 +590,7 @@ Contact
 -------------------------------------------*/
 #contact {
   padding-bottom: 180px;
+  margin: 0 auto;
 }
 
 #contact .section-title{
