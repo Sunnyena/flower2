@@ -232,9 +232,9 @@ text-align: left;
 Twitter
 -------------------------------------------*/
 #twitter {
-  width: 70vw;
-  display: inline-block;
-  margin: 150px auto 150px;
+  width: 100vw;
+  margin: 150px auto;
+  display: block;
 }
 
 /*-------------------------------------------
@@ -251,7 +251,7 @@ Contact
 }
 
 #contact .input_list{
-  width: 330px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 20px;
 }
